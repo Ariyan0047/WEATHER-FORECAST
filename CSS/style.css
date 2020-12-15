@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  text-transform: capitalize;
+  font-size: 62.5%;
+}
+
+body .showCase {
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  font-size: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .showCase .overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: 5;
+}
+
+body .showCase .videoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body .showCase .videoContainer video {
+  min-height: 100%;
+  min-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body .showCase .container {
+  color: #f4f4f4;
+  background-color: rgba(0, 0, 0, 0.2);
+  padding: 2.6rem;
+  z-index: 10;
+  max-width: 700px;
+}
+
+body .showCase .container .form-control {
+  background-color: rgba(204, 204, 204, 0.2);
+  border: none;
+  border-radius: 0;
+  color: #f4f4f4;
+  padding: 2rem;
+  font-size: 2rem;
+  border: 0.1rem solid rgba(204, 204, 204, 0.4);
+}
+
+body .showCase .container .card {
+  color: #f4f4f4;
+  background-color: rgba(204, 204, 204, 0.2);
+}
+
+body .showCase .container .card .card-body {
+  padding: 0.4rem;
+}
+
+body .showCase .container .card .card-body .card-title {
+  font-size: 2.4rem;
+  padding: 0.4rem;
+  background-color: rgba(68, 68, 68, 0.2);
+  border: 0.1rem solid rgba(204, 204, 204, 0.4);
+}
+
+body .showCase .container .card .card-body .card-text {
+  font-size: 2.4rem;
+  padding: 0.4rem;
+  background-color: rgba(68, 68, 68, 0.2);
+  border: 0.1rem solid rgba(204, 204, 204, 0.4);
+}
+/*# sourceMappingURL=style.css.map */
